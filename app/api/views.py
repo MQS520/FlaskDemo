@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time    : 2020/8/9 17:38
 # @Author  : MQS
-# @File    : view.py
+# @File    : views.py
 
 from flask import make_response, jsonify, request
 from app.api import api
