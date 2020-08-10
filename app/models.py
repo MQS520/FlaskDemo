@@ -4,11 +4,13 @@
 # @Author  : MQS
 # @File    : models.py
 
-import json
 from . import db
 
 
 class User(db.Model):
+    '''
+    用户表
+    '''
     __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(255))
