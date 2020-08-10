@@ -6,7 +6,9 @@
 
 from flask import Flask
 from config import config
+from flask_sqlalchemy import SQLAlchemy
 
+db = SQLAlchemy()
 
 def create_app(config_name):
     # 初始化
@@ -14,6 +16,8 @@ def create_app(config_name):
 
     # 导致指定的配置对象:创建app时，传入环境的名称
     app.config.from_object(config[config_name])
+
+    db.init_app(app)
 
     # 注册所有蓝图
     regist_blueprints(app)

@@ -24,7 +24,7 @@ class Config(object):
 class DevelopmentConfig(Config):
     DEBUG = True
     # 数据库URI
-    # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xxx@xxxx/xxx'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/flask_demo?charset=utf8'
 
     # 也可如下来写，比较清晰
     # SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{username}:{password}@{hostname}/{databasename}".format(username="xxxx", password="xxxx", hostname="xxxx", databasename="xxxx")
